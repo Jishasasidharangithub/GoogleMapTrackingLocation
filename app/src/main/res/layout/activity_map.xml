@@ -6,6 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MapActivity">
 
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/dot_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/startTrackingLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/middleTrackingLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/ic_navigation"
+        app:layout_constraintTop_toBottomOf="@+id/startTrackingLocationButton"
+        app:layout_constraintStart_toStartOf="@+id/startTrackingLocationButton"
+        app:layout_constraintEnd_toEndOf="@+id/startTrackingLocationButton"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/endTrackingLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/ic_navigation"
+        app:layout_constraintTop_toBottomOf="@+id/middleTrackingLocationButton"
+        app:layout_constraintStart_toStartOf="@+id/middleTrackingLocationButton"
+        app:layout_constraintEnd_toEndOf="@+id/middleTrackingLocationButton"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
